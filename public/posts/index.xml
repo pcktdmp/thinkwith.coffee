@@ -13,9 +13,7 @@
       <link>https://thinkwith.coffee/posts/hello-world/</link>
       <pubDate>Thu, 20 Mar 2025 12:02:18 +0100</pubDate>
       <guid>https://thinkwith.coffee/posts/hello-world/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if first_post_title != &amp;#39;Hello World&amp;#39;:
-    return birth_date &amp;lt; millenial_range
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>Why spend a lot of time on a Hello World?</description>
     </item>
   </channel>
 </rss>
