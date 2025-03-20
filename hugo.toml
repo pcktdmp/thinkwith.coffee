@@ -1,0 +1,4 @@
+baseURL = 'https://thinkwith.coffee/'
+languageCode = 'en-us'
+title = 'ThinkWith.Coffee'
+theme = 'PaperMod'
