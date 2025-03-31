@@ -15,11 +15,14 @@ Will it do my dishes?
 
 My job is to provide strategic value to our customers, while observing the market flooding with Agentic AI 
 management tools I have chosen to not jump that bandwagon (yet), simply because it is not mature enough for the masses 
-to deeply integrate in organizational process.
+to deeply integrate Agentic AI in organizational process on its own.
 
-To provide direct value through our products we deliver that (guaranteed) yield, instead of yet another technology stack 
+To provide direct value of Agentic AI through our products we deliver that (guaranteed) yield, instead of yet another technology stack 
 to adopt with all the FUD (Fear, Uncertainty and Doubt) implied.
 
-Based on the 'focus on the delivered output' philosophy, in [Multistax](https://sue.nl/products/multistax/), we have created 'Agentic FinOps' which 
+Based on the 'focus on the delivered value' philosophy, in [Multistax](https://sue.nl/products/multistax/), we have created 'Agentic FinOps' which 
 delivers direct actionable (persistent) cost reduction for your workload in any cloud. In this case, FinOps embedded in your workload 
-instead of a separate human practice. This way you don't need to manage Agentic AI yourself, Multistax does that for you.
+instead of a separate human practice. This way you don't need to manage Agentic AI yourself, products like Multistax do that for you.
+
+A concrete example of delivered value of 'Agentic FinOps' would be to configure the right storage tiering, database sizing, etc. that fits
+your workload configuration and usage patterns, which will inevitably change over time as your workload changes. 
