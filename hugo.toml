@@ -2,6 +2,7 @@ baseURL = 'https://thinkwith.coffee/'
 languageCode = 'en-us'
 title = 'ThinkWith.Coffee'
 author = 'Serge van Namen'
+bio = "I create technology."
 theme = 'PaperMod'
 [caches]
   [caches.images]
