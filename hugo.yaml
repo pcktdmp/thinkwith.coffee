@@ -1,0 +1,22 @@
+baseURL: https://ThinkWith.Coffee
+languageCode: en-us
+title: ThinkWith.Coffee
+theme: ["PaperMod"]
+env: production
+params:
+  author: ["Serge van Namen"]
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  homeInfoParams:
+    Title: Sharing my thoughts, one coffee at a time.
+    Content: Personal blog of Serge van Namen
+  socialIcons: # optional
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/svnamen/"
+    - name: "github"
+      url: "https://github.com/pcktdmp"
+    - name: "strava"
+      url: "https://www.strava.com/athletes/161893452"
+    - name: "other"
+      url: "https://sue.nl"

@@ -1,8 +1,8 @@
-+++
-date = '2025-03-31T10:29:58+02:00'
-draft = false
-title = 'Generative AI II(I): Rise of the Agents'
-+++
+---
+date: "2025-03-31T10:29:58+02:00"
+draft: false
+title: 'Generative AI II(I): Rise of the Agents'
+---
 
 2025 is all about Agentic AI. Organizations rushing to the digital riverbed for 'artificial' gold, only to find 
 themselves observing others trying to yield the same value without the right knowledge and tools.

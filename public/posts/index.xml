@@ -2,18 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on ThinkWith.Coffee</title>
-    <link>https://thinkwith.coffee/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on ThinkWith.Coffee</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Mar 2025 12:02:18 +0100</lastBuildDate>
-    <atom:link href="https://thinkwith.coffee/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Mar 2025 10:29:58 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
-      <link>https://thinkwith.coffee/posts/hello-world/</link>
-      <pubDate>Thu, 20 Mar 2025 12:02:18 +0100</pubDate>
-      <guid>https://thinkwith.coffee/posts/hello-world/</guid>
-      <description>Why spend a lot of time on a Hello World?</description>
+      <title>Generative AI II(I): Rise of the Agents</title>
+      <link>http://localhost:1313/posts/agentic-ai/</link>
+      <pubDate>Mon, 31 Mar 2025 10:29:58 +0200</pubDate>
+      <guid>http://localhost:1313/posts/agentic-ai/</guid>
+      <description>&lt;p&gt;2025 is all about Agentic AI. Organizations rushing to the digital riverbed for &amp;lsquo;artificial&amp;rsquo; gold, only to find
+themselves observing others trying to yield the same value without the right knowledge and tools.&lt;/p&gt;
+&lt;p&gt;While the (applied) technology has a lot of potential, generating business value out of it is still at very early stages.
+There are a lot of products who bring DIY Agentic AI capabilities, yet embedding it in an organization and yielding value
+is where organizations struggle.
+People simply don&amp;rsquo;t know how to deal with and oversee &amp;lsquo;it&amp;rsquo;. Is it a threat? Do I lose control? Will it have a heartbeat?
+Will it do my dishes?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
