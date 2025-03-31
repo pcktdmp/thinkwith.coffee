@@ -19,6 +19,6 @@ management tools I have chosen to not jump that bandwagon (yet), simply because 
 To provide direct value through our products we deliver the guaranteed yield instead of yet another technology stack 
 to adopt with all the FUD (Fear, Uncertainty and Doubt) implied.
 
-Based on this philosophy [Multistax](https://sue.nl/products/multistax/) we have created 'Agentic FinOps' which 
+Based on this philosophy, in [Multistax](https://sue.nl/products/multistax/), we have created 'Agentic FinOps' which 
 delivers direct actionable (persistent) cost reduction for your workload in any cloud. FinOps embedded in your workload 
 instead of a separate practice. This way you don't need to manage Agentic AI yourself, Multistax does that for you.
