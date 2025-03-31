@@ -1,6 +1,6 @@
 baseURL = 'https://thinkwith.coffee/'
 languageCode = 'en-us'
-title = 'ThinkWith.Coffee'
+title = 'ThinkWith.Coffee - Thoughts by [Serge van Namen](https://www.linkedin.com/in/svnamen/)'
 author = 'Serge van Namen'
 bio = "I create technology."
 theme = 'PaperMod'
