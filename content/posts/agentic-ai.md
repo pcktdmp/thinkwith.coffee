@@ -26,3 +26,5 @@ instead of a separate human practice. This way you don't need to manage Agentic 
 
 A concrete example of delivered value of 'Agentic FinOps' would be to configure the right storage tiering, database sizing, etc. that fits
 your workload configuration and usage patterns, which will inevitably change over time as your workload changes. 
+
+![T5](/images/t5.png)
