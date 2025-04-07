@@ -15,7 +15,8 @@ params:
     Title: Sharing my thoughts, one coffee at a time.
     Content: Personal blog of Serge van Namen
   socialIcons: # optional
-    - name: rss
+    - name: "rss"
+      url: "https://thinkwith.coffee/index.xml"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/svnamen/"
     - name: "github"
