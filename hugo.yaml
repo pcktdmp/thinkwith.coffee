@@ -8,6 +8,8 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
+  ShowShareButtons: true
+  ShareButtons: [ "linkedin", "reddit", "whatsapp", "telegram", "x" ]
   homeInfoParams:
     Title: Sharing my thoughts, one coffee at a time.
     Content: Personal blog of Serge van Namen
