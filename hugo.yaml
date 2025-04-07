@@ -18,7 +18,5 @@ params:
       url: "https://www.linkedin.com/in/svnamen/"
     - name: "github"
       url: "https://github.com/pcktdmp"
-    - name: "strava"
-      url: "https://www.strava.com/athletes/161893452"
     - name: "other"
       url: "https://sue.nl"
