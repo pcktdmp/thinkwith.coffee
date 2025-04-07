@@ -11,6 +11,7 @@ params:
   ShowShareButtons: true
   ShowRssButtonInSectionTermList: true
   ShareButtons: [ "linkedin", "reddit", "whatsapp", "telegram", "x" ]
+  ShowWordCount: true
   homeInfoParams:
     Title: Sharing my thoughts, one coffee at a time.
     Content: Personal blog of Serge van Namen
