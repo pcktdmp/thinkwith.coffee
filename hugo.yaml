@@ -9,6 +9,7 @@ params:
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
   ShowShareButtons: true
+  ShowRssButtonInSectionTermList: true
   ShareButtons: [ "linkedin", "reddit", "whatsapp", "telegram", "x" ]
   homeInfoParams:
     Title: Sharing my thoughts, one coffee at a time.
