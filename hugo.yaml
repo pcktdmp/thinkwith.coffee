@@ -15,9 +15,16 @@ params:
     Title: Sharing my thoughts, one coffee at a time.
     Content: Personal blog of Serge van Namen
   socialIcons: # optional
+    - name: rss # Shows an RSS feed icon on your site`
+      url: "index.xml" # Your RSS feed url path
     - name: "linkedin"
       url: "https://www.linkedin.com/in/svnamen/"
     - name: "github"
       url: "https://github.com/pcktdmp"
     - name: "other"
       url: "https://sue.nl"
+outputs:
+  home:
+    - HTML
+    - RSS # Supports your site output including RSS format
+    - JSON
