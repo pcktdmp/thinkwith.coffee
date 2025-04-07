@@ -1,5 +1,6 @@
 ---
 date: '2025-04-07T10:41:37+02:00'
+draft: false
 title: 'The Cloud Vending Machine'
 ---
 There’s a metaphor I keep coming back to when I think about modern cloud development: the vending machine.

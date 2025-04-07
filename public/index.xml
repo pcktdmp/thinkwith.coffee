@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ThinkWith.Coffee</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on ThinkWith.Coffee</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Mar 2025 10:29:58 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 10:41:37 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Cloud Vending Machine</title>
+      <link>http://localhost:1313/posts/cloud-vending-machine/</link>
+      <pubDate>Mon, 07 Apr 2025 10:41:37 +0200</pubDate>
+      <guid>http://localhost:1313/posts/cloud-vending-machine/</guid>
+      <description>&lt;p&gt;There’s a metaphor I keep coming back to when I think about modern cloud development: the vending machine.&lt;/p&gt;&#xA;&lt;p&gt;Think about it. When you walk up to a vending machine, you don’t wonder how it was stocked or who maintains it. You just press a button and get what you need. Fast, predictable, and (usually ;-)) reliable.&lt;/p&gt;&#xA;&lt;p&gt;That’s how the cloud should work.&lt;/p&gt;&#xA;&lt;p&gt;But for most teams, building in the cloud still feels like assembling the vending machine from parts every time you want a snack. You’re setting up infrastructure, configuring pipelines, stitching together services, and navigating endless layers of DevOps complexity. Even with great platforms like AWS, Azure, or GCP, the work behind the scenes can be overwhelming—especially when velocity matters.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Generative AI II(I): Rise of the Agents</title>
       <link>http://localhost:1313/posts/agentic-ai/</link>
       <pubDate>Mon, 31 Mar 2025 10:29:58 +0200</pubDate>
       <guid>http://localhost:1313/posts/agentic-ai/</guid>
-      <description>&lt;p&gt;2025 is all about Agentic AI. Organizations rushing to the digital riverbed for &amp;lsquo;artificial&amp;rsquo; gold, only to find
-themselves observing others trying to yield the same value without the right knowledge and tools.&lt;/p&gt;
-&lt;p&gt;While the (applied) technology has a lot of potential, generating business value out of it is still at very early stages.
-There are a lot of products who bring DIY Agentic AI capabilities, yet embedding it in an organization and yielding value
-is where organizations struggle.
-People simply don&amp;rsquo;t know how to deal with and oversee &amp;lsquo;it&amp;rsquo;. Is it a threat? Do I lose control? Will it have a heartbeat?
-Will it do my dishes?&lt;/p&gt;</description>
+      <description>&lt;p&gt;2025 is all about Agentic AI. Organizations rushing to the digital riverbed for &amp;lsquo;artificial&amp;rsquo; gold, only to find&#xA;themselves observing others trying to yield the same value without the right knowledge and tools.&lt;/p&gt;&#xA;&lt;p&gt;While the (applied) technology has a lot of potential, generating business value out of it is still at very early stages.&#xA;There are a lot of products who bring DIY Agentic AI capabilities, yet embedding it in an organization and yielding value&#xA;is where organizations struggle.&#xA;People simply don&amp;rsquo;t know how to deal with and oversee &amp;lsquo;it&amp;rsquo;. Is it a threat? Do I lose control? Will it have a heartbeat?&#xA;Will it do my dishes?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
