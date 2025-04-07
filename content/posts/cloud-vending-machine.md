@@ -18,3 +18,5 @@ In practice, cloud- and devops engineering is "solved" and does not require any 
 It’s not about replacing your team—it’s about giving them a better interface. A faster path to production. And a way to spend more time building features instead of wrestling with the plumbing.
 
 We don’t need more complexity in the cloud. We need better vending machines.
+
+![Cloud Vending Machine](/images/cloud-vending-machine.png)
