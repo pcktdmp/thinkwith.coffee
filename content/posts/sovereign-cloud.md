@@ -4,11 +4,11 @@ title: 'Sovereign Cloud Isn’t a Migration Problem'
 ---
 Most teams treat sovereign cloud like a logistics problem. Spin up a local region. Wrap it in compliance. Copy the infra. Move the data. Done.
 
-But this isn’t about copying and pasting your stack into a new jurisdiction. It’s about accepting a new reality: the cloud is no longer neutral ground. It’s a political territory.
+But this isn’t about copying and pasting your stack into a new jurisdiction. It’s about accepting a new reality: the cloud is no longer neutral ground.
 
-Geopolitics is now infrastructure. A new law, a new sanction, or a new interpretation of “access” can ripple through your architecture overnight. Sovereignty means knowing where your data lives, who can touch it, and what happens if that changes tomorrow.
+A new law, a new sanction, or a new interpretation of “access” can ripple through your architecture overnight. Sovereignty means, besides control, knowing where your data lives, who can touch it, and what happens if the situation changes tomorrow.
 
-You don’t get that resilience by executing harder. You get it by thinking differently. By designing for boundaries instead of assuming openness. By embedding jurisdiction into your architecture—not duct-taping it after the fact.
+You don’t get that resilience by doing a one off migration. You get it by thinking differently. By designing for moving targets instead of assuming fixation. By embedding jurisdiction and control into your architecture—not duct-taping it after the fact.
 
 Sovereign cloud isn’t a checkbox. It’s a shift in posture.
 
