@@ -1,6 +1,6 @@
 baseURL: https://ThinkWith.Coffee
 languageCode: en-us
-title: ThinkWith.Coffee
+title: ThinkWith.Coffee ☕
 theme: ["PaperMod"]
 env: production
 params:
