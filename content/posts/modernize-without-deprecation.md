@@ -14,7 +14,7 @@ Think of it as decoupling your app’s lifecycle from its runtime environment. Y
 
 This opens a few key doors:
 
-Portability without re-architecture. Your Java app from 2015? Build it once to the new spec and deploy it on EC2 today, then migrate it to Azure tomorrow without starting over.
+Portability without re-architecting. Your Java app from 2015? Build it once to the new spec and deploy it on EC2 today, then migrate it to Azure tomorrow without starting over.
 
 Unified pipeline logic. CI/CD workflows don’t care whether the artifact lands in a container runtime or on a VM image—they’re pushing the same spec through.
 
