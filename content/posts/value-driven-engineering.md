@@ -1,6 +1,6 @@
 ---
 date: '2025-06-23T10:16:44+02:00'
-title: 'Value Driven (Agile) Software Engineering'
+title: 'Business Goal (Agile) Software Engineering'
 ---
 In the agile universe, we constantly translate business needs into actionable work. Traditionally, this process unfolds through a clear hierarchy: Epics break down into Spikes, Spikes further unfold into Stories and (Sub-)Tasks. Each step refines abstraction into tangible work packages, providing engineering teams clarity and structure. Yet, solely relying on Epics and Stories to articulate business intent carries inherent limitations, often leaving gaps between technical teams and stakeholders.
 
@@ -16,5 +16,6 @@ Practically, agile and scrum metrics remain untouched, maintaining their critica
 
 In essence, by integrating clearly defined goals that strategically stretch and target specific stories and tasks within Epics, agile teams move beyond mere task management. They establish a powerful ecosystem where strategic clarity meets engineering precision, driving both innovative excellence and measurable business success.
 
+This way of working works well in R&D oriented organisations, where direct client feedback is not present for every LoC that needs to be generated.
 
 ![Value Engineering](/images/value-engineering.png)
