@@ -16,4 +16,5 @@ Practically, agile and scrum metrics remain untouched, maintaining their critica
 
 In essence, by integrating clearly defined goals that strategically stretch and target specific stories and tasks within Epics, agile teams move beyond mere task management. They establish a powerful ecosystem where strategic clarity meets engineering precision, driving both innovative excellence and measurable business success.
 
+
 ![Value Engineering](/images/value-engineering.png)
