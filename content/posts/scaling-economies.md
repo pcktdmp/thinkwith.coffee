@@ -1,6 +1,5 @@
 ---
 date: '2025-08-05T12:15:47+02:00'
-draft: true
 title: 'Programming with natural language'
 ---
 What effectively changes with software development in the AI era, is that you are going to program with natural language instead of machine language.
