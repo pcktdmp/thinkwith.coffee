@@ -1,6 +1,6 @@
 ---
 date: '2025-08-07T10:43:58+02:00'
-title: 'Steps, Big Impact: Rethinking Application Modernization'
+title: 'Small Steps, Big Impact: Rethinking Application Modernization'
 ---
 We've all been there. The quarterly board meeting where "digital transformation" gets thrown around like confetti, followed by whispers of massive IT overhauls and million-dollar modernization projects. But here's the thing—application modernization doesn't have to
 be a moonshot.
