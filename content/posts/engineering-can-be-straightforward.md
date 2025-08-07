@@ -45,5 +45,3 @@ Once you've demonstrated value, the next conversation with leadership changes. I
 Application modernization is a journey, not a destination. By anchoring every technical decision to business outcomes and embracing incremental progress, you transform what could be a risky, expensive project into a series of manageable, valuable improvements.
 
 Your future self (and your budget) will thank you.
-
-What's your biggest application modernization challenge? We can help you, no cure, no pay.
