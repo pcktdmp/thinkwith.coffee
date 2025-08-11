@@ -3,7 +3,7 @@ date: '2025-08-11T10:38:48+02:00'
 title: 'Agentic AI for Brownfield Software Engineering'
 ---
 
-Since Lovable Launched its agent, is my opinion the turning of consistent value creation by Agentic AI.
+Since Lovable Launched its agent, in my opinion, is the turning point towards consistent value creation by Agentic AI.
 
 For prototyping ideas and merging product design and software in one entity is where it shines, but what about brown field scenarios in software development? 
 
