@@ -13,7 +13,7 @@ But the reality in most software engineering departments, especially those worki
 
 Dropping an autonomous AI into that ecosystem and telling it to “go fix things” is not just reckless—it’s an invitation to disruption. Instead, what works is a patient, staged approach. The goal is to introduce agentic AI in a way that adds tangible value without jeopardizing stability.
 
-# The First Step: Read-Only Involvement
+## The First Step: Read-Only Involvement
 
 The safest starting point is to let the AI look, but not touch. This means giving it the ability to navigate the codebase, trace dependencies, and surface information for the team—without any possibility of changing the system.
 
@@ -22,7 +22,7 @@ Where is this feature implemented? What other parts of the system does this comp
 
 These capabilities may seem modest, but they immediately reduce the cognitive load on the team. Less time spent searching through files means more time spent thinking about solutions.
 
-# From Reading to Suggesting
+## From Reading to Suggesting
 
 Once the AI has proven its ability to provide useful, accurate information, it can begin making suggestions. Importantly, these suggestions are still entirely under human control.
 
@@ -30,19 +30,19 @@ At this point, the AI might propose a set of unit tests for a module with poor c
 
 The team still reviews, edits, and approves these outputs. The AI is not making unilateral changes; it is functioning as a skilled assistant whose work is always checked before it becomes part of the product.
 
-# Controlled Autonomy in Narrow Domains
+## Controlled Autonomy in Narrow Domains
 
 Only after trust has been established—both in the AI’s accuracy and in the guardrails around it—should limited autonomy be considered. Even then, this autonomy must be applied to the lowest-risk areas: documentation updates, comment improvements, architectural decision record maintenance, or small adjustments to build configurations that do not touch runtime code.
 
 Think of this stage as giving the AI a very narrow security badge: it can walk into certain rooms, tidy them up, and leave—but it cannot go anywhere near the production floor without a human escort.
 
-# The Importance of Measurement
+## The Importance of Measurement
 
 In brownfield environments, success is not defined by vague impressions of “feeling faster.” It is defined by measurable improvements. Before introducing AI into the workflow, the team must capture baseline metrics: the time taken to review a pull request, the mean time to resolve incidents, the number of flaky tests, and even subjective measures such as developer satisfaction.
 
 As the AI is introduced, these numbers should be monitored closely. If they improve without introducing new problems, that is evidence the approach is working. If they stagnate or worsen, adjustments are necessary.
 
-# The Real Benefit: Reduced Toil
+## The Real Benefit: Reduced Toil
 
 The deeper truth is that, in environments with a long history, the greatest value of agentic AI is not in writing perfect code faster than a human. It is in removing friction—the repetitive, low-skill, high-interruption work that slows engineers down and drains their attention.
 
