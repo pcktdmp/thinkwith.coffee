@@ -51,3 +51,5 @@ Every task the AI takes over in this category—trawling through logs, writing b
 Brownfield systems are like old cities: they have complex street layouts, strange architectural choices, and layers of history visible in every corner. They cannot be rebuilt overnight, and they should not be. Agentic AI, when introduced carefully, becomes a skilled guide—a traffic officer keeping flows smooth, a librarian retrieving exactly the right book, a quiet assistant setting the stage for more meaningful work.
 
 With the right boundaries, it can bring significant value without risking the stability that makes these systems reliable in the first place.
+
+![Brownfield with Agentic AI](/images/brown-field-ai.png)
