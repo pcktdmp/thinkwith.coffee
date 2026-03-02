@@ -3,6 +3,9 @@ languageCode: en-us
 title: ThinkWith.Coffee ☕
 theme: ["PaperMod"]
 env: production
+services:
+  googleAnalytics:
+    id: G-QK19MBYMLH
 params:
   author: ["Serge van Namen"]
   ShowPostNavLinks: true
