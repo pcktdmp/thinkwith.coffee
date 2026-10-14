@@ -8,6 +8,7 @@ services:
     id: G-QK19MBYMLH
 params:
   author: ["Serge van Namen"]
+  portraitImage: "/images/portrait.jpg"
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true

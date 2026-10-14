@@ -1,0 +1,126 @@
+/* ----------------------------------------------------------------
+   Theme tokens — warm cream/ink palette with a terracotta accent,
+   in the spirit of claude.ai's brand colors. Overrides PaperMod's
+   theme-vars.css, which this stylesheet is concatenated after.
+   ---------------------------------------------------------------- */
+:root {
+    --theme: rgb(245, 244, 237);        /* warm cream, not stock white */
+    --entry: rgb(253, 252, 247);
+    --primary: rgb(31, 30, 29);         /* ink */
+    --secondary: rgb(106, 105, 97);     /* warm grey */
+    --tertiary: rgb(230, 227, 216);
+    --content: rgb(31, 30, 29);
+    --code-block-bg: rgb(43, 42, 39);
+    --code-bg: rgb(237, 231, 217);      /* kraft tint */
+    --border: rgb(227, 224, 213);
+
+    --accent: rgb(204, 120, 92);        /* claude terracotta */
+    --accent-soft: rgb(240, 221, 206);
+    --accent-deep: rgb(156, 74, 46);    /* darker clay, used sparingly */
+}
+
+.dark {
+    --theme: rgb(38, 38, 36);           /* warm charcoal */
+    --entry: rgb(48, 48, 46);
+    --primary: rgb(242, 240, 233);
+    --secondary: rgb(168, 166, 157);
+    --tertiary: rgb(58, 57, 53);
+    --content: rgb(242, 240, 233);
+    --code-block-bg: rgb(28, 28, 26);
+    --code-bg: rgb(58, 55, 51);
+    --border: rgb(58, 57, 53);
+
+    --accent: rgb(224, 134, 96);        /* brighter terracotta for dark bg */
+    --accent-soft: rgb(74, 54, 44);
+    --accent-deep: rgb(232, 147, 107);
+}
+
+/* PaperMod gives list/home pages a `.list` body class whose background
+   defaults to --code-bg instead of --theme, so the homepage ends up a
+   different shade than single posts. Force it to match. */
+.list,
+.dark.list {
+    background: var(--theme);
+}
+
+/* Typography — serif for headings/titles, sans for reading, mono for
+   meta/code, matching the quick-read artifact. */
+body {
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.post-title,
+.page-header h1,
+.entry-header h1,
+.entry-header h2,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.post-meta,
+.breadcrumbs,
+.post-content code,
+.post-content pre code {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+/* Accent — ink blue replaces the default neutral link/hover color. */
+.post-content a {
+    color: var(--accent);
+    text-decoration-color: var(--accent-soft);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.nav a:hover,
+.logo a:hover,
+.footer a:hover,
+.pagination a:hover {
+    color: var(--accent);
+}
+
+.social-icons a:hover svg {
+    fill: var(--accent);
+}
+
+/* post-content h2 gets the same left accent bar as the article preview */
+.post-content h2 {
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+}
+
+/* blockquotes get the deeper clay accent instead of plain --primary */
+.post-content blockquote {
+    border-inline-start: 3px solid var(--accent-deep);
+    background: var(--code-bg);
+    padding-block: 8px;
+}
+
+.home-info-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .home-info-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
