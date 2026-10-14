@@ -126,6 +126,10 @@ body {
 }
 
 /* Cookie consent banner */
+.cookie-consent[hidden] {
+    display: none;
+}
+
 .cookie-consent {
     position: fixed;
     z-index: 100;

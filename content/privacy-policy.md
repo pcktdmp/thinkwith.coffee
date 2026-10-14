@@ -11,7 +11,7 @@ This privacy policy explains how ThinkWith.Coffee ("this website") processes per
 
 This website is operated by Serge van Namen, based in the Netherlands.
 
-Contact: [serge@easyict.net](mailto:serge@easyict.net)
+Contact: [serge@thinkwith.coffee](mailto:serge@thinkwith.coffee)
 
 For the purposes of the GDPR, Serge van Namen is the data controller for personal data processed through this website.
 
@@ -66,4 +66,4 @@ This policy may be updated from time to time, for example as the tools used on t
 
 ## Contact
 
-Questions about this policy or your data can be sent to [serge@easyict.net](mailto:serge@easyict.net).
+Questions about this policy or your data can be sent to [serge@thinkwith.coffee](mailto:serge@thinkwith.coffee).
