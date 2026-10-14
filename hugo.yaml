@@ -3,12 +3,11 @@ languageCode: en-us
 title: ThinkWith.Coffee ☕
 theme: ["PaperMod"]
 env: production
-services:
-  googleAnalytics:
-    id: G-QK19MBYMLH
 params:
   author: ["Serge van Namen"]
   portraitImage: "/images/portrait.jpg"
+  googleAnalyticsID: "G-QK19MBYMLH"
+  adsenseClientID: "ca-pub-1677045351956945"
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
@@ -28,6 +27,12 @@ params:
       url: "https://github.com/pcktdmp"
     - name: "other"
       url: "https://sue.nl"
+menu:
+  main:
+    - identifier: privacy-policy
+      name: Privacy Policy
+      url: /privacy-policy/
+      weight: 10
 outputs:
   home:
     - HTML

@@ -124,3 +124,87 @@ body {
         gap: 12px;
     }
 }
+
+/* Cookie consent banner */
+.cookie-consent {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    background: var(--entry);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--content);
+    max-width: 560px;
+}
+
+.cookie-consent p a {
+    color: var(--accent);
+}
+
+.cookie-consent-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.cookie-consent-btn {
+    font-family: "IBM Plex Sans", inherit;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--theme);
+    color: var(--primary);
+}
+
+.cookie-consent-btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: rgb(255, 255, 255);
+}
+
+.cookie-consent-settings-link {
+    position: fixed;
+    z-index: 100;
+    left: 16px;
+    bottom: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--entry);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .cookie-consent {
+        padding: 14px 16px;
+    }
+
+    .cookie-consent-actions {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .cookie-consent-btn {
+        flex: 1;
+    }
+}
