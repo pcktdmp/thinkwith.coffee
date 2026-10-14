@@ -1,6 +1,9 @@
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 <div id="cookie-consent-banner" class="cookie-consent" hidden>
-    <p>This site uses cookies for analytics and to show ads. See the <a href="/privacy-policy/">privacy policy</a> for details.</p>
+    <div class="cookie-consent-text">
+        <p>This site uses cookies for analytics and to show ads. See the <a href="/privacy-policy/">privacy policy</a> for details.</p>
+        <p id="cookie-consent-status" class="cookie-consent-status" hidden></p>
+    </div>
     <div class="cookie-consent-actions">
         <button id="cookie-consent-reject" type="button" class="cookie-consent-btn cookie-consent-btn-secondary">Reject</button>
         <button id="cookie-consent-accept" type="button" class="cookie-consent-btn cookie-consent-btn-primary">Accept</button>
@@ -45,9 +48,32 @@
     }
 
     var banner = document.getElementById("cookie-consent-banner");
+    var status = document.getElementById("cookie-consent-status");
     var settingsBtn = document.getElementById("cookie-consent-settings");
     var acceptBtn = document.getElementById("cookie-consent-accept");
     var rejectBtn = document.getElementById("cookie-consent-reject");
+
+    function updateStatus(value) {
+        acceptBtn.classList.remove("is-active");
+        rejectBtn.classList.remove("is-active");
+        if (value === "accepted") {
+            status.hidden = false;
+            status.textContent = "Current choice: Accepted";
+            acceptBtn.classList.add("is-active");
+        } else if (value === "rejected") {
+            status.hidden = false;
+            status.textContent = "Current choice: Rejected";
+            rejectBtn.classList.add("is-active");
+        } else {
+            status.hidden = true;
+            status.textContent = "";
+        }
+    }
+
+    function showBanner() {
+        updateStatus(localStorage.getItem(CONSENT_KEY));
+        banner.hidden = false;
+    }
 
     function hideBanner() {
         banner.hidden = true;
@@ -59,7 +85,7 @@
         applyConsent(stored);
         settingsBtn.hidden = false;
     } else {
-        banner.hidden = false;
+        showBanner();
     }
 
     acceptBtn.addEventListener("click", function () {
@@ -75,7 +101,7 @@
 
     settingsBtn.addEventListener("click", function () {
         settingsBtn.hidden = true;
-        banner.hidden = false;
+        showBanner();
     });
 })();
 </script>

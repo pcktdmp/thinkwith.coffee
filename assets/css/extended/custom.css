@@ -158,6 +158,19 @@ body {
     color: var(--accent);
 }
 
+.cookie-consent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cookie-consent-status {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: var(--secondary);
+}
+
 .cookie-consent-actions {
     display: flex;
     gap: 10px;
@@ -180,6 +193,10 @@ body {
     background: var(--accent);
     border-color: var(--accent);
     color: rgb(255, 255, 255);
+}
+
+.cookie-consent-btn.is-active {
+    box-shadow: 0 0 0 2px var(--accent-soft), 0 0 0 1px var(--accent) inset;
 }
 
 .cookie-consent-settings-link {
