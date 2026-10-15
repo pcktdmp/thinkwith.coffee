@@ -1,12 +1,11 @@
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 <div id="cookie-consent-banner" class="cookie-consent" hidden>
     <div class="cookie-consent-text">
-        <p>This site uses cookies for analytics and to show ads. See the <a href="/privacy-policy/">privacy policy</a> for details.</p>
-        <p id="cookie-consent-status" class="cookie-consent-status" hidden></p>
+        <p id="cookie-consent-message">This site uses cookies for analytics and to show ads. See the <a href="/privacy-policy/">privacy policy</a> for details.</p>
     </div>
     <div class="cookie-consent-actions">
-        <button id="cookie-consent-reject" type="button" class="cookie-consent-btn cookie-consent-btn-secondary">Reject</button>
-        <button id="cookie-consent-accept" type="button" class="cookie-consent-btn cookie-consent-btn-primary">Accept</button>
+        <button id="cookie-consent-reject" type="button" class="cookie-consent-btn cookie-consent-btn-secondary">Reject<span class="cookie-consent-check" hidden> &check;</span></button>
+        <button id="cookie-consent-accept" type="button" class="cookie-consent-btn cookie-consent-btn-primary">Accept<span class="cookie-consent-check" hidden> &check;</span></button>
     </div>
 </div>
 <button id="cookie-consent-settings" type="button" class="cookie-consent-settings-link" hidden>Cookie settings</button>
@@ -16,6 +15,7 @@
     var CONSENT_KEY = "cookie-consent";
     var GA_ID = {{ site.Params.googleAnalyticsID | jsonify }};
     var ADS_CLIENT = {{ site.Params.adsenseClientID | jsonify }};
+    var CONFIRM_DELAY = 900;
 
     function loadAnalytics() {
         if (!GA_ID || window.__gaLoaded) return;
@@ -48,36 +48,55 @@
     }
 
     var banner = document.getElementById("cookie-consent-banner");
-    var status = document.getElementById("cookie-consent-status");
+    var message = document.getElementById("cookie-consent-message");
     var settingsBtn = document.getElementById("cookie-consent-settings");
     var acceptBtn = document.getElementById("cookie-consent-accept");
     var rejectBtn = document.getElementById("cookie-consent-reject");
+    var acceptCheck = acceptBtn.querySelector(".cookie-consent-check");
+    var rejectCheck = rejectBtn.querySelector(".cookie-consent-check");
+    var defaultMessage = message.textContent;
 
-    function updateStatus(value) {
+    // Reflects the stored choice onto the button that was actually
+    // clicked, rather than a separate status line.
+    function markChosenButton(value) {
         acceptBtn.classList.remove("is-active");
         rejectBtn.classList.remove("is-active");
+        acceptCheck.hidden = true;
+        rejectCheck.hidden = true;
         if (value === "accepted") {
-            status.hidden = false;
-            status.textContent = "Current choice: Accepted";
             acceptBtn.classList.add("is-active");
+            acceptCheck.hidden = false;
         } else if (value === "rejected") {
-            status.hidden = false;
-            status.textContent = "Current choice: Rejected";
             rejectBtn.classList.add("is-active");
-        } else {
-            status.hidden = true;
-            status.textContent = "";
+            rejectCheck.hidden = false;
         }
     }
 
     function showBanner() {
-        updateStatus(localStorage.getItem(CONSENT_KEY));
+        message.textContent = defaultMessage;
+        banner.classList.remove("is-leaving");
         banner.hidden = false;
+        markChosenButton(localStorage.getItem(CONSENT_KEY));
     }
 
     function hideBanner() {
         banner.hidden = true;
+        banner.classList.remove("is-leaving");
         settingsBtn.hidden = false;
+    }
+
+    // Gives visible confirmation of the click (message swap, button
+    // checkmark) before the banner fades out, instead of vanishing
+    // the instant a button is pressed.
+    function confirmAndClose(value) {
+        markChosenButton(value);
+        message.textContent = value === "accepted"
+            ? "Saved: cookies accepted. Change this anytime via “Cookie settings”."
+            : "Saved: cookies rejected. Change this anytime via “Cookie settings”.";
+        setTimeout(function () {
+            banner.classList.add("is-leaving");
+            setTimeout(hideBanner, 250);
+        }, CONFIRM_DELAY);
     }
 
     var stored = localStorage.getItem(CONSENT_KEY);
@@ -91,12 +110,12 @@
     acceptBtn.addEventListener("click", function () {
         localStorage.setItem(CONSENT_KEY, "accepted");
         applyConsent("accepted");
-        hideBanner();
+        confirmAndClose("accepted");
     });
 
     rejectBtn.addEventListener("click", function () {
         localStorage.setItem(CONSENT_KEY, "rejected");
-        hideBanner();
+        confirmAndClose("rejected");
     });
 
     settingsBtn.addEventListener("click", function () {

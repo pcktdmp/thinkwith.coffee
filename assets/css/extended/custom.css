@@ -145,6 +145,14 @@ body {
     background: var(--entry);
     border-top: 1px solid var(--border);
     box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.cookie-consent.is-leaving {
+    opacity: 0;
+    transform: translateY(16px);
 }
 
 .cookie-consent p {
@@ -162,13 +170,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.cookie-consent-status {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 12px;
-    letter-spacing: 0.02em;
-    color: var(--secondary);
 }
 
 .cookie-consent-actions {
@@ -197,6 +198,10 @@ body {
 
 .cookie-consent-btn.is-active {
     box-shadow: 0 0 0 2px var(--accent-soft), 0 0 0 1px var(--accent) inset;
+}
+
+.cookie-consent-check {
+    font-weight: 700;
 }
 
 .cookie-consent-settings-link {
